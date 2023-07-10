@@ -1,5 +1,6 @@
 package n1exercici5;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -13,11 +14,6 @@ public class Persona implements Serializable{
 	private  int edat;
 	private String dni;
 	
-	
-	public Persona() {
-		
-	}
-	
 	public Persona(String nom, int edat, String dni) {
 		this.nom = nom;
 		this.edat = edat;
@@ -25,16 +21,23 @@ public class Persona implements Serializable{
 	}
 
 	public void serialitzar(String ruta, Persona persona) throws IOException {
-		ObjectOutputStream serialitzar = new ObjectOutputStream(new FileOutputStream(ruta));
+		System.out.println("a");
+		FileOutputStream file = new FileOutputStream(ruta);
+		ObjectOutputStream serialitzar = new ObjectOutputStream(file);
 		serialitzar.writeObject(persona);
 		serialitzar.close();
+		file.close();
 		System.out.println("Objecte serialitzat");
+		
 	}
 	
 	public static void deserialitzar(String ruta) throws IOException, ClassNotFoundException {
-		ObjectInputStream deserialitzar = new ObjectInputStream(new FileInputStream(ruta));
+		System.out.println("b");
+		FileInputStream file = new FileInputStream(ruta);
+		ObjectInputStream deserialitzar = new ObjectInputStream(file);
 		Persona personaResultat = (Persona) deserialitzar.readObject();
 		deserialitzar.close();
+		file.close();
 		System.out.println(personaResultat);
 		System.out.println("Objecte deserialitzat");
 	}

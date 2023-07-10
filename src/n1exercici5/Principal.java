@@ -1,6 +1,5 @@
 package n1exercici5;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Principal {
@@ -10,7 +9,7 @@ public class Principal {
 		Persona persona = new Persona("Joan Gonzalez", 35, "36578937Z");
 		System.out.println(persona);
 
-		String ruta = "src" + File.separator + "n1exercici5" + File.separator + "arxiu.ser";
+		String ruta = args[0];
 
 		try {
 			persona.serialitzar(ruta, persona);
@@ -23,6 +22,9 @@ public class Principal {
 		} catch (ClassNotFoundException | IOException e) {
 			e.getMessage();
 		}
+
+		System.out.println("Hola");
 	}
+
 
 }
