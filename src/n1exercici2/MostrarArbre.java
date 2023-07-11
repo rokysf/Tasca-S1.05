@@ -7,7 +7,7 @@ public class MostrarArbre {
 
 	public static void main(String[] args) {
 
-		llistarArbre("c:");
+		llistarArbre(".\\src");
 
 	}
 

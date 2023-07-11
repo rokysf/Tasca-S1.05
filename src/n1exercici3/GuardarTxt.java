@@ -10,7 +10,7 @@ public class GuardarTxt {
 	public static void main(String[] args) {
 						
 		try {
-		guardarArbreTxt("c:");
+		guardarArbreTxt(".\\src");
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}

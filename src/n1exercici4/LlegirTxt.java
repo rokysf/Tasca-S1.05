@@ -13,7 +13,7 @@ public class LlegirTxt {
 
 	public static void main(String[] args) {
 		
-		String rutaGuardar = "c:";
+		String rutaGuardar = ".\\src";
 		String rutaLlegir ="src" + File.separator + "n1exercici4" + File.separator + "prova.txt";
 			
 		try {
