@@ -1,0 +1,5 @@
+n1exercici1 = Desde la linea de comandos voy a la carpeta n1exercici1 y ejecuto javac *.java para compilar y para ejecutar el programa voy a la carpeta src y escribo java n1exercici1\MostrarDirectori.java
+n1exercici2 = Desde la linea de comandos voy a la carpeta n1exercici2 y ejecuto javac *.java para compilar y para ejecutar el programa voy a la carpeta src y escribo java n1exercici2\MostrarArbre.java
+n1exercici3 = Desde la linea de comandos voy a la carpeta n1exercici3 y ejecuto javac *.java para compilar y para ejecutar el programa voy a la carpeta src y escribo java n1exercici3\GuardarTxt.java
+n1exercici4 = Desde la linea de comandos voy a la carpeta n1exercici4 y ejecuto javac *.java para compilar y para ejecutar el programa voy a la carpeta src y escribo java n1exercici1\LlegirTxt.java
+n1exercici5 = Desde la linea de comandos voy a la carpeta n1exercici5 y ejecuto javac *.java para compilar y para ejecutar el programa voy a la carpeta src y escribo java n1exercici1\Principal.java
