@@ -18,13 +18,13 @@ public class LlegirTxt {
 			
 		try {
 			guardarArbreTxt(rutaGuardar);
-		}catch(Exception e) {
+		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
 	
 		try {
 			llegirTxt(rutaLlegir);
-		}catch(Exception e) {
+		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
 	
@@ -40,10 +40,10 @@ public class LlegirTxt {
 			File arxiu = llista[i];
 
 			if (arxiu.isFile()) {
-				escriureTxt.write(String.format("%s (%s) - %s", arxiu.getName(), arxiu.isDirectory() ? "D" : "F", sdf.format(arxiu.lastModified())+"\n"));
+				escriureTxt.write(String.format("%s (%s) - %s", arxiu.getName(), "F", sdf.format(arxiu.lastModified())+"\n"));
 				
 			} else {
-				escriureTxt.write(String.format("%s (%s) - %s", arxiu.getName(), arxiu.isDirectory() ? "D" : "F", sdf.format(arxiu.lastModified())+"\n"));
+				escriureTxt.write(String.format("%s (%s) - %s", arxiu.getName(), "D", sdf.format(arxiu.lastModified())+"\n"));
 				guardarArbreTxt(arxiu.getAbsolutePath());
 				}
 		}		
