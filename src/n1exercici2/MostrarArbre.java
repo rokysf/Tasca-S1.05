@@ -20,14 +20,11 @@ public class MostrarArbre {
 			File arxiu = llista[i];
 
 			if (arxiu.isFile()) {
-				System.out.println(String.format("%s (%s) - %s", arxiu.getName(), arxiu.isDirectory() ? "D" : "F",
-						sdf.format(arxiu.lastModified())));
+				System.out.println(String.format("%s (%s) - %s", arxiu.getName(),"F", sdf.format(arxiu.lastModified())));
 			} else {
-				System.out.println(String.format("%s (%s) - %s", arxiu.getName(), arxiu.isDirectory() ? "D" : "F",
-						sdf.format(arxiu.lastModified())));
+				System.out.println(String.format("%s (%s) - %s", arxiu.getName(),"D", sdf.format(arxiu.lastModified())));
 				llistarArbre(arxiu.getAbsolutePath());
 			}
-
 		}
 	}
 }
