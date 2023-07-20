@@ -1,7 +1,6 @@
 package n1exercici4;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -17,7 +16,8 @@ public class LlegirTxt {
 		String rutaLlegir ="src" + File.separator + "n1exercici4" + File.separator + "prova.txt";
 			
 		try {
-			guardarArbreTxt(rutaGuardar);
+			FileWriter escriureTxt = new FileWriter("src" + File.separator + "n1exercici4" + File.separator + "prova.txt");
+			guardarArbreTxt(rutaGuardar,escriureTxt);
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
@@ -27,13 +27,11 @@ public class LlegirTxt {
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
-	
 	}
 
-	public static void guardarArbreTxt(String ruta) throws IOException {
+	public static void guardarArbreTxt(String ruta, FileWriter escriureTxt) throws IOException {
 		File directori = new File(ruta);
 		File[] llista = directori.listFiles();
-		BufferedWriter escriureTxt = new BufferedWriter(new FileWriter("src" + File.separator + "n1exercici4" + File.separator + "prova.txt"));
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 		for (int i = 0; i < llista.length; i++) {
@@ -44,10 +42,9 @@ public class LlegirTxt {
 				
 			} else {
 				escriureTxt.write(String.format("%s (%s) - %s", arxiu.getName(), "D", sdf.format(arxiu.lastModified())+"\n"));
-				guardarArbreTxt(arxiu.getAbsolutePath());
+				guardarArbreTxt(arxiu.getAbsolutePath(),escriureTxt);
 				}
 		}		
-		escriureTxt.close();
 	}
 
 	public static void llegirTxt(String ruta) throws IOException {

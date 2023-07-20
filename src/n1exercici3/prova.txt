@@ -1,0 +1,13 @@
+n1exercici1 (D) - 10/07/2023 16:52:53
+MostrarDirectori.class (F) - 14/07/2023 12:52:13
+MostrarDirectori.java (F) - 14/07/2023 12:52:13
+n1exercici2 (D) - 07/07/2023 21:06:18
+MostrarArbre.class (F) - 14/07/2023 12:52:13
+MostrarArbre.java (F) - 20/07/2023 16:03:09
+n1exercici3 (D) - 07/07/2023 21:10:34
+GuardarTxt.class (F) - 14/07/2023 12:52:13
+GuardarTxt.java (F) - 20/07/2023 16:24:45
+prova.txt (F) - 20/07/2023 16:24:49
+n1exercici4 (D) - 10/07/2023 16:57:36
+LlegirTxt.java (F) - 19/07/2023 16:14:29
+prova.txt (F
