@@ -18,11 +18,6 @@ public class LlegirTxt {
 		try {
 			FileWriter escriureTxt = new FileWriter("src" + File.separator + "n1exercici4" + File.separator + "prova.txt");
 			guardarArbreTxt(rutaGuardar,escriureTxt);
-		}catch(IOException e) {
-			System.out.println(e.getMessage());
-		}
-	
-		try {
 			llegirTxt(rutaLlegir);
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
